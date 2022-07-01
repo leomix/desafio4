@@ -1,0 +1,14 @@
+<h3>Form</h3>
+<form action="/api/productos" method="post">
+    <input type="hidden" name="id" value="{{producto.id}}">
+    <label > Title:
+        <input type="text" name="title" value="{{producto.title}}">
+    </label>
+    <label > Price:
+        <input type="text" name="price" value="{{producto.price}}">
+    </label>
+    <label > Thumbnail:
+        <input type="text" name="thumbnail" value="{{producto.thumbnail}}">
+    </label>
+    <button>Submit</button>
+</form>

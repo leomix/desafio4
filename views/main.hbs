@@ -1,0 +1,19 @@
+{{> form}}
+<br>
+<h2>List of Products</h2>
+{{#if productos}}
+    <h3>existe</h3>
+    {{#each productos}}
+    <a href="/edit/{{this.id}}">
+        <li class="{{this.title}}">
+            {{this.title}} {{this.price}}
+            <img src="{{this.thumbnail}}" alt="" width="100">
+            
+        </li>
+    </a>
+    <a href="/delete/{{this.id}}">
+    <span>[ X ]</span>
+    </a>
+    
+    {{/each}}
+{{/if}}
