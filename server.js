@@ -50,8 +50,8 @@ routerProducto.post('/',middle,async (req,res)=>{
     res.send(result)
 })
 routerProducto.put('/:id',async (req,res)=>{
-    const id = req.params.id
     const data = req.body
+    const data.id = req.params.id
     const result = await contenedor1.put(data) ?? {error:'error al actualizar'}
     res.send(result)
 })
