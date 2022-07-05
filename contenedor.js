@@ -14,7 +14,7 @@ export class Contenedor{
     }
 
     put(objeto){
-        this.lista = this.lista.map(x => (x.id === objeto.id) ? objeto : x)
+        this.lista = this.lista.map(x => (x.id == objeto.id) ? objeto : x)
         return objeto
     }
     
